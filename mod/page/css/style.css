@@ -1,0 +1,90 @@
+/**
+ * Style.
+ * 
+ * @author  Mario Sakamoto <mskamot@gmail.com>
+ * @license MIT http://www.opensource.org/licenses/MIT
+ * @see     https://wtag.com.br/divmon
+ */
+
+/*
+ * Reset
+ */
+html, body, div, span,
+table, thead, tbody, tfoot, tr, th, td,
+form, label, input, textarea, select, option,
+ul, li,
+h1, h2, h3, h4, h5, h6, p, button,
+img,
+a { }
+
+html { }
+
+body { }
+
+div { }
+
+span { }
+
+table { }
+
+	thead { }
+
+	tbody { }
+
+	tfoot { }
+
+		tr { }
+
+			th { }
+
+			td { }
+		
+form { }
+
+	label { }
+
+	input { }
+	
+	textarea { }
+
+	select { }
+	
+		option { }
+
+ul { }
+
+	li { }
+	
+h1 { }
+
+h2 { }
+
+h3 { }
+
+h4 { }
+
+h5 { }
+
+h6 { }
+
+p { }
+
+img { }
+
+a { }
+
+/**
+ * Id
+ */
+
+/*
+ * Class
+ */
+
+.dv-blue-light {
+	color: rgb(0, 183, 255);
+}
+
+.dv-blue-light-bg {
+	background-color: rgb(0, 183, 255);
+}

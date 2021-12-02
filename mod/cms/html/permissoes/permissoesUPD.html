@@ -1,0 +1,112 @@
+<!-- Update View -->
+	
+	<!-- Content -->
+
+	<div id="gz-content" class="dv-f-r">
+	
+		<p class="dv-mt-mdpi dv-mr-xdpi dv-mb-mdpi dv-ml-xdpi gz-gray">
+		
+			<one(titles)>
+			
+				<gz>menus.menu</gz> /
+
+				<gz>telas.tela</gz> / 
+				
+				<span class="gz-black gz-bold">
+				
+					@_LAN_UPDATE
+					
+				</span>
+				
+			</one>	
+				
+		</p>
+	
+		<for(permissoes)>
+	
+			<!-- Form -->
+				
+			<form id="gz-form" class="dv-f-l dv-ml-xdpi dv-pt-ldpi">
+						
+				<!-- Permissao -->
+				
+				<div class="gz-block dv-f-l">
+		
+					<div class="gz-label-mdpi dv-f-l dv-pt-mdpi dv-pb-mdpi">Permissao</div>
+
+				</div>
+
+				<div class="gz-block dv-f-l">
+					
+					<input class="gz-textbox-mdpi dv-f-l dv-mt-ldpi" type="text" 
+							id="permissoes.permissao" name="permissoes.permissao" value="<gz>permissoes.permissao.format</gz>">
+				
+				</div>
+					
+				<!-- Estilo -->
+		
+				<div class="gz-block dv-f-l">
+		
+					<div class="gz-label-mdpi dv-f-l dv-pt-mdpi dv-pb-mdpi">Estilo</div> 
+					
+				</div>
+				
+				<div class="gz-block dv-f-l">
+				
+					<select id="permissoes.estilos" class="gz-select-mdpi dv-f-l dv-mt-ldpi gz-required">
+							
+						<foreach(permissoes.estilos)>
+						
+							<option value="<gz>estilos.id</gz>" <gz>estilos.selected</gz>>
+							
+								<gz>estilos.estilo</gz>
+							
+							</option>
+
+						</foreach>
+					
+					</select>
+				
+				</div>
+
+				<!-- Ok -->
+
+				<div class="gz-button dv-f-l dv-mt-mdpi dv-mr-hdpi dv-mb-xdpi">
+
+					<a href="#" onclick="request('permissoes', 'update'); return false;" class="gz-tooltip">
+
+						<img src="@_ROOT/res/img/ldpi/ok.png" />
+
+						<span class="gz-span-top-right @_THEME">
+
+							@_LAN_CONFIRM
+
+						</span>
+
+					</a>
+
+				</div>
+				
+				<!-- Cancel -->
+				
+				<div class="gz-button dv-f-l dv-mt-mdpi dv-mb-xdpi">
+
+					<a href="#" onclick="cancel(); return false;" class="gz-tooltip">
+
+						<img src="@_ROOT/res/img/ldpi/cancel.png"/>
+						
+						<span class="gz-span-top-right @_THEME">
+
+							@_LAN_CANCEL
+
+						</span>
+
+					</a>
+
+				</div>
+					
+			</form>
+			
+		</for>
+		
+	</div>
